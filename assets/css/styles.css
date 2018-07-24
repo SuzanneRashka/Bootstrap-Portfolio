@@ -8,8 +8,15 @@ Main content background color: #ffffff
 Main content border color: #dddddd
 */
 
-html {
-    background-color: teal;
+body {
+    background-image: url("../images/circles-light.png");
+    font-family: 'Georgia', 'Arial', Helvetica, sans-serif;
+}
+
+p {
+    line-height: 2;
+    padding-top: 6px;
+    color: #777777;
 }
 
 hr {
@@ -21,14 +28,31 @@ hr {
     padding: 0;
 }
 
+nav {
+    padding: 0 !important;
+    height: auto;
+    font-family: "Times New Roman", Times, serif;
+}
+
 footer {
+    position: absolute;
     background-color: #666666;
     color: #cccccc;
-    text-align: bottom;
+}
+
+.man-nav {
+    background-color: #4aaaa5;
+    height: 50px;
+    text-align: center;
+    font-size: 26px;
 }
 
 .border {
     border-bottom: 2px solid #cccccc !important;
+}
+
+.border-footer {
+    border-top: 5px solid #4aaaa5;
 }
 
 .img {
@@ -39,13 +63,32 @@ footer {
 }
 
 .about-me {
-    background-color: pink;
+    background-color: #fff;
+    margin: 10% 15% 20%;
+    padding: 30px 10px;
 }
 
-.color-teal {
+.about-me h2 {
     color: #4aaaa5;
 }
 
-.margin {
-    margin: 10% 15% 10% 15%;
+.m-l {
+    margin: 0 15%;
+}
+
+.m-r {
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 720px) {
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 611px) {
+    .navbar-toggler {
+        margin-left: 15%;
+    }
 }
