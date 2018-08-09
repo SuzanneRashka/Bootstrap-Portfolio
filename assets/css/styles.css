@@ -110,6 +110,11 @@ label {
     bottom: 20px;
 }
 
+.center {
+    margin: auto;
+    width: 80%;
+}
+
 /* CONTACT.HTML */
 
 .man-form {
@@ -117,17 +122,22 @@ label {
     color: #fff;
 }
 
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
 /* @media is order specific! */
 
-@media screen and (max-width: 611px) {
+@media screen and (max-width: 640px) {
     .navbar-toggler {
         margin-left: 5%;
     }
-}
-
-@media screen and (max-width: 720px) {
     .img {
-        width: 100%;
+        width: 100% !important;
         height: auto;
     }
     .content {
@@ -142,11 +152,40 @@ label {
     .m-r {
         margin-right: 5%;
     }
+    .card-img-overlay {
+        width: 80% !important;
+        height: auto;
+    }
 }
+
+@media screen and (max-width:768px) {
+    .img {
+        width: 50%;
+        height: auto;
+    }
+    .content {
+        margin: 5% 5% 10%;
+    }
+    .navbar-toggle {
+        margin-left: 5%;
+    }
+    .m-l {
+        margin: 0 5%;
+    }
+    .m-r {
+        margin-right: 5%;
+    }
+    /* .card-img {
+        width: 40% !important;
+        height: auto;
+    } */
+}
+
+/* @media screen and (max-width: 980px) {} */
 
 /* Attempt at aligning boxes at screen width. Not working*/
 
-/* @media screen and (max-width: 1240px) {
+/* @media screen and (max-width: 980px) {
     .boxes {
         margin-left: auto;
         margin-right: auto;
