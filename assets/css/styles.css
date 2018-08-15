@@ -130,6 +130,12 @@ label {
     flex: 1;
 }
 
+.links {
+    background-color: #fff;
+    margin: 20px 15% 10%;
+    padding: 30px 10px;
+}
+
 /* @media is order specific! */
 
 @media screen and (max-width: 640px) {
